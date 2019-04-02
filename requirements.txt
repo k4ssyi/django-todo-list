@@ -1,0 +1,8 @@
+django
+django-allauth
+djangorestframework
+django-filter
+django-debug-toolbar
+pep8
+autopep8
+flake8
