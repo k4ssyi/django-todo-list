@@ -4,6 +4,9 @@ from django.utils import timezone
 
 # Create your models here.
 class Post(models.Model):
+    class Meta(object):
+        db_table = 'post'
+
     author = models.ForeignKey('auth.user', on_delete=models.CASCADE)
     title = models.CharField(max_length=255)
     text = models.TextField()

@@ -20,5 +20,8 @@ from django.views.generic import TemplateView
 urlpatterns = [
     path('admin/', admin.site.urls),
     path('', TemplateView.as_view(template_name='home.html'), name='home'),
+    # ログイン機能
     path('accounts/', include('allauth.urls')),
+    # 投稿機能
+    path('post/', include('posts.urls')),
 ]
